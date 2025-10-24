@@ -1,0 +1,5 @@
+/Users/mac/Documents/projects/zoyra-org/job-platform/backend/src/Recruitment.Application/obj/Debug/net8.0/Recruitment.Application.csproj.AssemblyReference.cache
+/Users/mac/Documents/projects/zoyra-org/job-platform/backend/src/Recruitment.Application/obj/Debug/net8.0/Recruitment.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Documents/projects/zoyra-org/job-platform/backend/src/Recruitment.Application/obj/Debug/net8.0/Recruitment.Application.AssemblyInfoInputs.cache
+/Users/mac/Documents/projects/zoyra-org/job-platform/backend/src/Recruitment.Application/obj/Debug/net8.0/Recruitment.Application.AssemblyInfo.cs
+/Users/mac/Documents/projects/zoyra-org/job-platform/backend/src/Recruitment.Application/obj/Debug/net8.0/Recruitment.Application.csproj.CoreCompileInputs.cache
