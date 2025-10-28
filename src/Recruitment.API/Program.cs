@@ -13,6 +13,7 @@ using SendGrid;
 using System.Text;
 using Recruitment.Application.Interfaces;
 using Recruitment.Application.Services;
+using Recruitment.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -179,5 +180,16 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.MapHub<RealTimeService>("/realtime");
+
+// Simple health endpoint for container health checks
+app.MapGet("/health", () => "OK");
+
+// Seed database (migrations or ensure created) and initial data
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    var logger = scope.ServiceProvider.GetService<ILogger<DbInitializer>>();
+    await DbInitializer.SeedAsync(db, logger);
+}
 
 app.Run();

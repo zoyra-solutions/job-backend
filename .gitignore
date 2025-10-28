@@ -1,0 +1,37 @@
+# .NET build artifacts for job-backend
+
+# Build results
+bin/
+obj/
+out/
+artifacts/
+
+# Configuration-specific outputs
+Debug/
+Release/
+
+# Test results & coverage
+TestResults/
+coverage/
+
+# Logs
+*.log
+logs/
+
+# IDE metadata
+.vs/
+.idea/
+.vscode/
+*.user
+*.rsuser
+
+# Publish output (if used locally)
+publish/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Ensure nested project outputs are ignored
+src/**/bin/*
+src/**/obj/*
